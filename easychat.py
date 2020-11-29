@@ -58,7 +58,7 @@ while True:
                         [sg.Text('databse called <easychat>,',justification='center',size=(50,1))],
                         [sg.Text('and within it two new tables for the purposes of this program.',justification='center',size=(50,1))],
                         [sg.Text('If not, we will use the dababase and tables created on the first use.',justification='center',size=(50,1))],
-                        [sg.InputText("falafelCapaldi@29304",size=(57,1),key="-pwd-")],
+                        [sg.InputText(size=(57,1),key="-pwd-")],
                         [sg.Submit('Log in',size=(50,1))]]
         sg.theme('Light Purple')
         window = sg.Window('easyChat', layout)
@@ -265,7 +265,7 @@ while True:
     elif event == 'Join (as Client)':
         window.close(); del window
         layout = [[sg.Image(data=logo,size=(400,400))],[sg.Text('Enter your name, client.',justification='center',size=(50,1))],      
-                        [sg.InputText(size=(57,1), key="-clientname-")],
+                        [sg.InputText("Client",size=(57,1), key="-clientname-")],
                         [sg.Text("Host ",justification='center'), sg.InputText(key="-host-", size=(50,1))],
                         [sg.Text("Port ",justification='center'), sg.InputText("2903",key="-port-",size=(51,1))],     
                         [sg.Submit(size=(50,1))]]    
