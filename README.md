@@ -5,6 +5,25 @@
 A simple chat program built using Python and Socket Programming. High School project :)
 This repo is mainly for version control.
 
+---------------------------------------------------------------------------------------
+### NOTES
+To run this 'as-is':
+Prerequisites:
+1) Python3
+2) These modules:
+  a) pysimplegui
+  b) threading
+  c) socket
+  d) prettytable
+
+In case you want to use this as an .exe file, use pyinstaller. However you will need to add any media files you use in this to the data section of the spec file created by pyinstaller.
+
+As of right now, the program is accompanied by a GUI only till before the actual chatting starts (the client/server, login and connection windows). Feel free to fork this repo and request a pull.
+
+This was originally for a school project, and the report for the same follows.
+
+----------------------------------------------------------------------------------------
+
 
 # OVERVIEW
 In today’s increasingly digital world, not a day goes by when we don’t use texting platforms on our smartphones and laptops to communicate with our friends, family members, colleagues and coworkers. So, for my Computer Science project for class XII, I decided to try my hand at building a basic chat software ourselves, using Python and MySQL. The result was an app that I call easyChat.
