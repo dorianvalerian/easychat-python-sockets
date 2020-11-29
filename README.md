@@ -1,4 +1,7 @@
 # easychat
+
+![easychat](ecgit.png)
+
 A simple chat program built using Python and Socket Programming. High School project :)
 This repo is mainly for version control.
 
