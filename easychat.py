@@ -50,7 +50,7 @@ while True:
 
 
         layout = [[sg.Image(data=logo, size=(400,400))],
-                        [sg.Text('Enter your name, server.',justification='center',size=(50,1))],      
+                        [sg.Text('Enter your name, Server.',justification='center',size=(50,1))],      
                         [sg.InputText("Dorian",size=(57,1), key="-name-")],
                         [sg.Text('...',justification='center',size=(50,1))],
                         [sg.Text('Enter your sql credentials.',justification='center',size=(50,1))],
