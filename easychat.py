@@ -33,7 +33,7 @@ layout = [[sg.Image(data=logo)],
 ]
 
 #STEP 2 - create the window
-window = sg.Window('easyChat', layout, grab_anywhere=True, icon=r"D:\Downloads\ec2.ico")
+window = sg.Window('easyChat', layout, grab_anywhere=True)
 
 
 # STEP3 - the event loop
@@ -51,7 +51,7 @@ while True:
 
         layout = [[sg.Image(data=logo, size=(400,400))],
                         [sg.Text('Enter your name, Server.',justification='center',size=(50,1))],      
-                        [sg.InputText("Dorian",size=(57,1), key="-name-")],
+                        [sg.InputText(size=(57,1), key="-name-")],
                         [sg.Text('...',justification='center',size=(50,1))],
                         [sg.Text('Enter your sql credentials.',justification='center',size=(50,1))],
                         [sg.Text(' If this is your first time hosting on this device, we will create a new',justification='center',size=(50,1))],
@@ -120,7 +120,7 @@ while True:
         host=socket.gethostname() #gets local host name of your device
         ipaddr=socket.gethostbyname(host)
         host=ipaddr
-        port=2903
+        port=2903  #this is an arbitrary number, but keep it above 1000.
         s.bind(('0.0.0.0',port))
         print(f"Server done binding to host {host} and port 2903 successfully.")
         print("Server is waiting for incoming connections.")
