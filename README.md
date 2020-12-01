@@ -10,6 +10,7 @@ This repo is mainly for version control.
 To run this 'as-is':
 Prerequisites:
 1) Python3
+2) mySQL*
 2) These modules:
   a) pysimplegui
   b) threading
@@ -22,6 +23,7 @@ As of right now, the program is accompanied by a GUI only till before the actual
 
 This was originally for a school project, and the report for the same follows.
 
+* It's entirely possible to run this without using SQL — you'll have to remove all the cursor.execute() statements and the like. Note that you will not be able to access chat history.
 ----------------------------------------------------------------------------------------
 
 
