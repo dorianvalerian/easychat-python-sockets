@@ -127,7 +127,7 @@ while True:
 
         layout=[[sg.Text(f"Server will start on host: {host}  and port: 2903",size=(50,1))],
                         [sg.Text("Binded all IPv4 to 2903.",size=(50,1))],
-                        [sg.Text("Waiting for incoming connections.",size=(50,1))],
+                        [sg.Text("Waiting for incoming connections",size=(50,1))],
                         [sg.Image(r"purpleload.gif",key="-GIF-",background_color="black")],
                         [sg.Button("Cancel")]]
         sg.theme('Light Purple')
