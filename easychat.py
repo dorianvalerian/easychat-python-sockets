@@ -50,10 +50,10 @@ while True:
 
 
         layout = [[sg.Image(data=logo, size=(400,400))],
-                        [sg.Text('Enter your name, Server.',justification='center',size=(50,1))],      
+                        [sg.Text('Enter your name, Server',justification='center',size=(50,1))],      
                         [sg.InputText("Dorian",size=(57,1), key="-name-")],
                         [sg.Text('...',justification='center',size=(50,1))],
-                        [sg.Text('Enter your sql credentials.',justification='center',size=(50,1))],
+                        [sg.Text('Enter your sql credentials',justification='center',size=(50,1))],
                         [sg.Text(' If this is your first time hosting on this device, we will create a new',justification='center',size=(50,1))],
                         [sg.Text('databse called <easychat>,',justification='center',size=(50,1))],
                         [sg.Text('and within it two new tables for the purposes of this program.',justification='center',size=(50,1))],
