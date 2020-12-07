@@ -8,7 +8,6 @@ import queue
 import base64files
 import sql_init
 #end of imports
-
 logo=base64files.static_logo
 
 def conn_listen(gui_queue):
@@ -19,7 +18,6 @@ def conn_listen(gui_queue):
         gui_queue.put("ConnEstb")
     except:
         pass
-
 
 sg.theme("light purple")
 # STEP 1 define the layout
@@ -80,7 +78,7 @@ while True:
         layout=[[sg.Text(f"Server will start on host: {host}  and port: 2903",size=(50,1))],
                         [sg.Text("Binded all IPv4 to 2903.",size=(50,1))],
                         [sg.Text("Waiting for incoming connections",size=(50,1))],
-                        [sg.Image(r"purpleload.gif",key="-GIF-",background_color="black")],
+                        [sg.Image(r"assets/purpleload.gif",key="-GIF-",background_color="black")], #I haven't used  a base64 string for this since gif base64s are just way too long.
                         [sg.Button("Cancel")]]
         sg.theme('Light Purple')
         window = sg.Window('easyChat', layout)
@@ -93,7 +91,7 @@ while True:
                 exit()
             if event == "Cancel":
                 exit()
-            window['-GIF-'].update_animation(r"purpleload.gif",  time_between_frames=100)
+            window['-GIF-'].update_animation(r"assets/purpleload.gif",  time_between_frames=100)
             thread_id = threading.Thread(target=conn_listen, args=(gui_queue,), daemon=True)
             thread_id.start()
             try:
