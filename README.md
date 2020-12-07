@@ -17,6 +17,8 @@ Prerequisites:
   c) socket
   d) prettytable
 
+You must download all the files and not just easychat.py, by clicking on the "Code" button above. Then, run easychat.py to use the application.
+
 In case you want to use this as an .exe file, use pyinstaller. However you will need to add any media files you use in this to the data section of the spec file created by pyinstaller.
 
 As of right now, the program is accompanied by a GUI only till before the actual chatting starts (the client/server, login and connection windows). Feel free to fork this repo and request a pull.
@@ -24,6 +26,8 @@ As of right now, the program is accompanied by a GUI only till before the actual
 This was originally for a school project, and the report for the same follows.
 
 * It's entirely possible to run this without using SQL — you'll have to remove all the cursor.execute() statements and the like. Note that you will not be able to access chat history.
+
+* You can use this over public IP at your own discretion, by setting up port forwarding on your router (i.e setting it so that requests to a specific port on your router, that is, to your public IP, will get forwarded to the port specified here in server.py on your local machine, that is, your local IP). This is not guaranteed to work because of various aspects such as firewalls and router limitations.
 ----------------------------------------------------------------------------------------
 
 

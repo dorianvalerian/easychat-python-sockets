@@ -4,11 +4,6 @@ import prettytable
 import PySimpleGUI as sg
 import threading
 import queue
-if __name__ == "__main__":
-    from . import base64files
-    from . import gui_layouts
-    from . import sql_init
-
 from easychat_package import base64files #used for the png images and any long-ish pieces of plaintext
 from easychat_package import gui_layouts #used to create gui windows where required
 from easychat_package import sql_init #to initalise the mysql connector and cursor object, and create the relevant tables if necessary.

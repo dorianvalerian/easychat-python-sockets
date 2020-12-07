@@ -12,6 +12,8 @@ def choice():
                 [sg.Button('Host (as Server)'), sg.Button('Join (as Client)')]]
     window = sg.Window('easyChat', layout, grab_anywhere=True, icon=r"D:\Downloads\ec2.ico")
     event, values = window.read()   # Read the event that happened and the values dictionary.
+    if event == sg.WIN_CLOSED:     # If user closed window with X 
+        exit()
 
 #entering server name/creds
 def server_gui():
