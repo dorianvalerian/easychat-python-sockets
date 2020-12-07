@@ -47,7 +47,7 @@ def conn_wait(host):
     layout=[[sg.Text(f"Server will start on host: {host}  and port: 2903",size=(50,1))],
                     [sg.Text("Binded all IPv4 to 2903.",size=(50,1))],
                     [sg.Text("Waiting for incoming connections",size=(50,1))],
-                    [sg.Image(r"assets/purpleload.gif",key="-GIF-",background_color="black")], #I haven't used  a base64 string for this since gif base64s are just way too long.
+                    [sg.Image(r"media/purpleload.gif",key="-GIF-",background_color="black")], #I haven't used  a base64 string for this since gif base64s are just way too long.
                     [sg.Button("Cancel")]]
     sg.theme('Light Purple')
     window = sg.Window('easyChat', layout)
